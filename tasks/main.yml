@@ -1,0 +1,5 @@
+- name: Remove test database
+  mysql_db: name=test state=absent
+
+- name: Remove test user
+  mysql_user: user=test host_all=yes state=absent
